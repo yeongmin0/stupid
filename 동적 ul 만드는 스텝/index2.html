@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class="alert-box" id="box">
+
+    <p id="time">알림창</p>
+        <button onclick="알림창열기('none');">닫기</button>
+    </div>
+
+        <button onclick="아이디();">아이디 알림창</button>
+        <button onclick="비밀번호();">비밀번호 알림창</button>
+      
+        
+    <script>
+
+        function 아이디(){
+            document.getElementById('time').innerHTML='애기 사랑해 뽀뽀하고싶푸 ';
+            document.getElementById('box').style.display='block';
+        }
+        function 비밀번호(){
+            document.getElementById('time').innerHTML='애기 보고시푸 안아주고시푸';
+            document.getElementById('box').style.display='block';
+        }
+        function 알림창열기(구멍){
+            document.getElementById('box').style.display=구멍;
+        }
+
+    </script>
+</body>
