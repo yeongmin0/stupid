@@ -61,11 +61,31 @@ crossorigin="anonymous"></script>
         <button id="login" class="btn btn-danger">로그인</button>
       </div>
 
+      <div class="alert">
+       <samp id="nun">5</samp>초뒤 바뀜
+      </div>
+    
 
 
 <!-- <button id="login">로그인 </button> -->
 <script>
 
+var co = 5;
+
+let time =setInterval(function(){
+  co -=1;
+  if(co >=0){
+  document.querySelector('#nun').innerHTML = co;
+ 
+}
+}, 1000);
+clearInterval(co);
+
+/*
+ setTimeout(function(){
+  $('.alert').hide();
+})
+*/
 $('#login').on('click',function(){
     $('.black-bg').addClass('show-modal')
     $('#close').on('click',function(){
