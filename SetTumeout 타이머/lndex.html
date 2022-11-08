@@ -22,7 +22,7 @@ crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-          <span class="navbar-brand">Navbar</span>
+          <span class="navbar-brand">SutPid</span>
           <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -57,18 +57,64 @@ crossorigin="anonymous"></script>
       </ul>
 
       <div class="main-bg">
-        <h4>shirts on sale</h4>
+        <h4>login main</h4>
         <button id="login" class="btn btn-danger">로그인</button>
       </div>
 
       <div class="alert">
        <samp id="nun">5</samp>초뒤 바뀜
       </div>
-    
 
 
+<div style="overflow: hidden">  
+<div class="slide">
+  <div class="box">
+    <img src="car1.png">
+  </div>
+  <div class="box">
+    <img src="car2.png">
+  </div>
+  <div class="box">
+    <img src ="car3.png">
+  </div>
+</div>
+</div>
+
+<button class="slide-1">1</button>
+<button class="slide-2">2</button>
+<button class="slide-3">3</button>
+<button class="next">다음</button>
+<button class="back">이전</button>
 <!-- <button id="login">로그인 </button> -->
 <script>
+
+$('.slide-1').on('click',function(){
+  $('.slide').css('transform','translateX(0vw)');
+})
+$('.slide-2').on('click',function(){
+  $('.slide').css('transform','translateX(-100vw)');
+})
+$('.slide-3').on('click',function(){
+  $('.slide').css('transform','translateX(-200vw)');
+})
+var 지금사진 = 1;
+
+$('.next').on('click',function(){
+  if( 지금사진 === 1){
+    $('.slide').css('transform','translateX(-100vw)');
+    지금사진 +=1;
+  }else if(지금사진 == 2){
+    $('.slide').css('transform','translateX(-200vw)');
+    지금사진 +=1;
+  }
+  
+});
+
+
+
+
+
+
 
 var co = 5;
 

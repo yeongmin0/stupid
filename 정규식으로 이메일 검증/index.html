@@ -66,26 +66,22 @@ crossorigin="anonymous"></script>
       </div>
     
 
-
-<!-- <button id="login">로그인 </button> -->
+ <!-- <button id="login">로그인 </button> --> -->
 <script>
 
 var co = 5;
 
-let time =setInterval(function(){
+ setInterval(function(){
   co -=1;
   if(co >=0){
   document.querySelector('#nun').innerHTML = co;
  
 }
 }, 1000);
-clearInterval(co);
 
-/*
- setTimeout(function(){
-  $('.alert').hide();
-})
-*/
+
+
+
 $('#login').on('click',function(){
     $('.black-bg').addClass('show-modal')
     $('#close').on('click',function(){
@@ -104,15 +100,22 @@ if(1 ===    3){
 }else if (3 !=2){
   console.log('3번째입니다');
 }
+
 $('form').on('submit',function(){
   if(document.getElementById('email').value===''){
     alert('아이디 입력')
   }
-  if(document.getElementById('pwd').value ===''){
-    alert('비밀번호 입력')
-  }
+
+  var 비번 = document.getElementById('pwd').value;
+    if( /[A-Z]/.test(비번) == false){
+        alert('대문자가 없어요')
+    } 
+  
   if(document.getElementById('pwd').value.length < 6)
   alert('너무 짧잖아요')
+
+
+
 });
 
 

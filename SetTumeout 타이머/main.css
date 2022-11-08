@@ -31,3 +31,16 @@
     padding: 100px 20px;
     background: lightgray;
 }
+
+.slide{
+    width: 300vw;
+    transition: all 2s;
+}
+.box{
+    width: 100vw;
+    float: left;
+}
+.box img{
+    width: 100%;
+  
+}
