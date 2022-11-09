@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="random.css">
+    <title>여행 랜덤 정하기</title>
+</head>
+<body>
+  
+
+<div class="main-bg">
+    <h1>여행 랜덤</h1>
+    <button id="login" class="btn btn-danger">랜덤 정하기</button>
+</div>
+
+<div class="black">
+    <div class="white">
+        <h2>가고 싶은 곳 입력하세요.</h2>
+        <button class="ab" id="ac">안갈래요</button>
+        <div class="my-3">
+            <input type="text" class="form-control" id="email">
+           </div>
+    </div>
+</div>
+
+
+<script>
+  $('#login').on('click',function(){
+    $('.black').addClass('show-modal')
+    $('#close').on('click',function(){
+        $('.black').removeClass('show-modal')
+    });   
+})
+</script>
+
+
+
+
+</body>
+</html>
