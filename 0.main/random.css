@@ -25,3 +25,13 @@
     visibility: visible;
     opacity: 1;
 }
+.main-bg{
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    text-shadow: 1px 5px 10px gray;
+}
+#login{
+    font-size: 20px;
+}

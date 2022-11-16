@@ -8,14 +8,12 @@
     <title>여행 랜덤 정하기</title>
 </head>
 <body>
-  
-
 <div class="main-bg">
     <h1>여행 랜덤</h1>
     <button id="login" class="btn btn-danger">랜덤 정하기</button>
 </div>
 
-<div class="black">
+<!-- <div class="black">
     <div class="white">
         <h2>가고 싶은 곳 입력하세요.</h2>
         <button class="ab" id="ac">안갈래요</button>
@@ -23,39 +21,24 @@
             <input type="text" class="form-control" id="email">
            </div>
     </div>
-</div>
+</div> -->
 
-<select name="travel" onchange="handleOnChange(this)">
+<!-- <select name="travel" onchange="handleOnChange(this)">
     <option value="Seoul">서울</option>
     <option value="Gyeonggi-do">경기도</option>
     <option value="Incheon">인천</option>
     <option value="Gangwon-do">강원도</option>
-    <option value="Daejeon">대전</option>
+    <option value="Daejeon">대전</option>               ---여행가기 리스트?
     <option value="Daegu">대구</option>
     <option value="Gwangju">광주</option>
     <option value="Busan">부산</option>
     <option value="Ulsan|">울산</option>
    </select>
   <button id="good" class="good-jab">결과보기</button>
-  <div id='result'></div>
+  <div id='result'></div> -->
 
 
-<script>
-  $('#login').on('click',function(){
-    $('.black').addClass('show-modal')
-    $('#close').on('click',function(){
-        $('.black').removeClass('show-modal')
-    });   
-})
-const list = [“TOKYO”, “CANADA”, “GWANGJU”, “HONGKONG”];
-function alertPlace() {
-  
-
-  const randomIndex = Math.floor(Math.random() * list.length);
-  const result = list[randomIndex];
-
-  alert(result):
-}
+<script src = "/0.main/main.js">
 </script>
 
 
