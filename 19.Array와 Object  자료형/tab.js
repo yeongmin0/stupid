@@ -53,6 +53,15 @@ $('.list').click(function(e){
 //     $('.tab-content').removeClass('show');
 //     $('.tab-content').eq(구멍).addClass('show');
 // }
-var car2 ={name : '소나타', price :[50000, 20000 ,4000] };
+
+
+
+
+
+var car2 ={name : '스튜핏 저장소', price :[50000, 20000 ,4000] };
+
+document.querySelector('.name1').innerHTML =car2.name;
 
 document.querySelector('.price').innerHTML =car2.price[0]; 
+
+console.log(car2);

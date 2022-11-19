@@ -69,3 +69,14 @@ document.querySelectorAll('.card-body h5')[i].innerHTML = '상품명 : ' + produ
   document.querySelectorAll('.card-body h5')[i].innerHTML = '상품명 : ' +products[i].title;
    document.querySelectorAll('.card-body p')[i].innerHTML = '가격:'+ products[i].price;
 }
+
+$('.form-select').eq(0).on('input',function(){
+  var value = $('.form-select').eq(0).val();
+if(value == '셔츠'){
+  $('.form-select').eq(1).removeClass('form-hide');
+  }else if(value == '바지'){
+    $('.form-select').eq(1).removeClass('form-hide');
+    var 바지사이즈 =  `<option>28</option>
+                      <option>30</option>`;
+  }
+})
