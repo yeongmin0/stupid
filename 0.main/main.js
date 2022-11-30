@@ -29,6 +29,13 @@ for (let i = 0; i <10; i++){
 document.getElementById('button').addEventListener('click',function(){
     alert('프로젝트 입니다');
 });
-document.getElementById('button1').addEventListener('click',function(){
-    document.getElementById('').removeClass('body');
-})
+
+function night() {
+    $('body').css("backgroundColor" ,'black');
+    $('body').css("color" ,"white");
+  }
+  
+function day() {
+    $('body').css("backgroundColor" ,'white');
+    $('body').css("color" ,"black");
+}

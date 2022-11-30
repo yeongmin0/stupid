@@ -5,9 +5,12 @@
 }
 
 .main-bg{
-    padding: 100px 20px;
+    padding: 75px 15px;
     background: white;
-    text-shadow: 3px 1px 5px black;
+    text-shadow: 3px 1px 4px black;
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }
 
 
@@ -89,10 +92,14 @@ ul.list {
 .img {
   color: black;
 }
-  .seuol-img{
+.seuol-img{
   right: 10px;
   top: 475px;
   position: fixed;
   }
 
-  
+.chgin{
+  text-align: center;
+ 
+
+
