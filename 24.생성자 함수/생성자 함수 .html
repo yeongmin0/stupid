@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+function Itme(title,price){
+     //this = {};
+    this.title = title;
+    this.price = price;
+    this.showPrice = function(){
+        console.log(`가격은 ${price}원 입니다.`);
+    };
+    //return this;  
+}
+
+const itme1 = new Itme("신발",2000);
+const itme2 = new Item("의상",3000);
+
+console.log(ltme(item1 , itme2));
+
+
+itme2.showPrice();
+
+
+
+
+    </script>
+</body>
+</html>
