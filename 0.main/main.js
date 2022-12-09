@@ -30,19 +30,48 @@ document.getElementById('button').addEventListener('click',function(){
     alert('프로젝트 입니다');
 });
 
-let war = document.querySelector('body');
+function nightchinge(self){
+  var target = document.querySelector('body');
+  if(self.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    self.value = 'day';
 
-$('travel').on('click',function(){
-  if(war === 'night'){
-    $('body').css("backgroundColor" ,'black');
-    $('body').css("color" ,"white");
-    $('travel').val('day');
+    let list = document.querySelectorAll('a');
+    let i = 0;
+    while(i < list.length){
+      list[i].style.color = 'powderblue';
+      i = i + 1;
+    }
   }else{
-    $('body').css("backgroundColor" ,'white');
-    $('body').css("color" ,"black");
-    $('travel').val('night');
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    self.value = 'night';
+
+    let list = document.querySelectorAll('a');
+    let i = 0;
+    while(i < list.length){
+      list[i].style.color = 'blue';
+      i = i + 1;
+    }
   }
-});
+}
+
+
+
+// let war = document.querySelector('body');
+
+// $('travel').on('click',function(){
+//   if(war === 'night'){
+//     $('body').css("backgroundColor" ,'black');
+//     $('body').css("color" ,"white");
+//     $('travel').val('day');
+//   }else{
+//     $('body').css("backgroundColor" ,'white');
+//     $('body').css("color" ,"black");
+//     $('travel').val('night');
+//   }
+// });
 
 
 
