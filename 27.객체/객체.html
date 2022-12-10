@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27.객체 ( 22 -12 - 10)</title>
+</head>
+<body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+
+    <script>
+        let sutpid = {
+            "program" : "sutpid",
+            "design" : "sutpid"
+        }
+
+        document.write ("program : "+sutpid.program+"<br>");
+        document.write ("design : "+sutpid.design+"<br>");
+        sutpid.bookmain = "yeongmin";
+        document.write("boomain :" +sutpid.bookmain+"<br");
+
+        sutpid["data main"] = "main";
+        document.write("data main : "+sutpid["data main"]+"<br>");
+    </script>
+<h2>Yeong</h2>
+
+<script>
+    for(let key in sutpid){
+        document.write(key + ':'+sutpid[key]+'<br>');
+    }
+</script>
+<h1>property</h1>
+<script>
+    sutpid.showAll = () => {
+        for(let key in sutpid){
+        document.write(key + ':'+sutpid[key]+'<br>');
+    }
+}
+sutpid.showAll();
+</script>
+</body>
+</html>
