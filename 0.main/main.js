@@ -30,6 +30,24 @@ document.getElementById('button').addEventListener('click',function(){
     alert('프로젝트 입니다');
 });
 
+for(let del = 0; del < 10;  del++){
+document.getElementById("dleon").addEventListener("click",function(){
+  alert("절 대 누 르 지 마 세 요 ");
+})
+}
+
+
+// document.getElementById('mainons').addEventListener('click',function(){
+//   let chios = prompt("추천을 골라보세요 연습입니다")
+
+//   switch(chios){
+//     case "연습1" :
+//       alert("서울시 입니다 (연습)")
+//   }
+// })
+
+
+
 function nightchinge(self){
   var target = document.querySelector('body');
   if(self.value === 'night'){
